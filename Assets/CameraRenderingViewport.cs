@@ -27,7 +27,7 @@ public class CameraRenderingViewport : MonoBehaviour
         {
             if (!devices[i].isFrontFacing)
             {
-                mCamera = new WebCamTexture(devices[i].name, Screen.width, Screen.height);
+                mCamera = new WebCamTexture(devices[i].name);
             }
         }
         if (mCamera == null) return;
